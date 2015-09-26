@@ -44,13 +44,25 @@
 
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <?php
+		if ( has_nav_menu( 'primary' ) ) {
                 wp_nav_menu( array(
                         'theme_location'  => 'primary',
                         'container'       => false,
                         'menu_class'      => 'nav navbar-nav',//  navbar-right
                         'walker'          => new Bootstrap_Nav_Menu(),
+			'fallback_cb'	  => false,
                     )
                 );
+		} else { ?>
+		<ul class='nav navbar-nav'>
+			<li <?php if(is_home()) { echo 'class="active"'; } ?>><a href='<?php echo home_url(); ?>/'>Home</a></li>
+			<?php wp_list_pages( array(
+				'title_li'	  => '',
+				'depth'		  => 1,
+				)
+			); ?>
+		</ul><!-- end .menu -->
+		<?php }
                 get_search_form();
                 ?>
             </div><!-- /.navbar-collapse -->
