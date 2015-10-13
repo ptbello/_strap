@@ -43,16 +43,27 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
-                <?php
-                wp_nav_menu( array(
-                        'theme_location'  => 'primary',
-                        'container'       => false,
-                        'menu_class'      => 'nav navbar-nav',//  navbar-right
-                        'walker'          => new Bootstrap_Nav_Menu(),
-                    )
-                );
-                get_search_form();
-                ?>
+	            <ul class="nav navbar-nav">
+		            <?php if( has_nav_menu( 'primary' ) ) :
+			            wp_nav_menu( array(
+		                        'theme_location'  => 'primary',
+		                        'container'       => false,
+		                        //'menu_class'      => 'nav navbar-nav',//  'nav navbar-right'
+		                        'walker'          => new Bootstrap_Nav_Menu(),
+		                        'fallback_cb'     => null,
+				                'items_wrap'      => '%3$s',// skip the containing <ul>
+		                    )
+		                );
+	                else :
+		                wp_list_pages( array(
+				                'menu_class'      => 'nav navbar-nav',//  'nav navbar-right'
+				                'walker'          => new Bootstrap_Page_Menu(),
+				                'title_li'        => null,
+			                )
+		                );
+		            endif; ?>
+	            </ul>
+	            <?php get_search_form(); ?>
             </div><!-- /.navbar-collapse -->
 
 		</nav><!-- #site-navigation -->
