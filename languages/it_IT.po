@@ -2,19 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _strap\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-06-23 01:05+0100\n"
-"PO-Revision-Date: 2015-06-23 01:05+0100\n"
+"POT-Creation-Date: 2015-10-14 15:02+0200\n"
+"PO-Revision-Date: 2015-10-14 15:02+0200\n"
 "Last-Translator: Piero Bellomo <piero.bellomo@viewlab.net>\n"
 "Language-Team: \n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
 "esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"X-Poedit-Basepath: ..\\\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -99,24 +99,29 @@ msgstr "Inverti navigazione"
 msgid "Page %s"
 msgstr "Pagina %s"
 
-#: inc/functions-strap.php:132
+#: inc/functions-strap.php:149
+#, php-format
+msgid "#%d (no title)"
+msgstr "#%d (nessun titolo)"
+
+#: inc/functions-strap.php:220
 msgid "Name"
 msgstr "Nome"
 
-#: inc/functions-strap.php:138
+#: inc/functions-strap.php:226
 msgid "Email"
 msgstr "Email"
 
-#: inc/functions-strap.php:144
+#: inc/functions-strap.php:232
 msgid "Website"
 msgstr "Sito web"
 
-#: inc/functions-strap.php:151
+#: inc/functions-strap.php:239
 msgctxt "noun"
 msgid "Comment"
 msgstr "Commento"
 
-#: inc/functions-strap.php:154
+#: inc/functions-strap.php:242
 #, php-format
 msgid ""
 "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
@@ -125,46 +130,50 @@ msgstr ""
 "Puoi usare questi <abbr title=\"HyperText Markup Language\">HTML</abbr> tag "
 "e attributi: %s"
 
-#: inc/functions-strap.php:212
+#: inc/functions-strap.php:300
 msgid "Name your new _strapped theme"
 msgstr "Dai un nome al tuo nuovo tema _strap"
 
-#: inc/functions-strap.php:216
+#: inc/functions-strap.php:304
 msgid "Theme name"
 msgstr "Nome del tema"
 
-#: inc/functions-strap.php:217
+#: inc/functions-strap.php:305
 msgid "Theme slug"
 msgstr "Slug del tema"
 
-#: inc/functions-strap.php:225
+#: inc/functions-strap.php:313
 msgid "Something like \"My Awesome Theme\" "
 msgstr "Qualcosa come \"Un Tema Straordinario\" "
 
-#: inc/functions-strap.php:233
-msgid "Something like \"my-awesome-theme\" or \"mat\" "
-msgstr "Qualcosa come \"\"un-tema-straordinario\" o \"uts\" "
+#: inc/functions-strap.php:321
+msgid ""
+"Something like \"my_awesome_theme\" or \"mat\" - only letters, numbers and "
+"underscores allowed"
+msgstr ""
+"Qualcosa come \"un_tema_straordinario\" o \"uts\" - accetta solo lettere "
+"numeri e trattini bassi"
 
-#: inc/functions-strap.php:278
+#: inc/functions-strap.php:366
 msgid "Name is required"
 msgstr "Nome è un campo obbligatorio"
 
-#: inc/functions-strap.php:285
+#: inc/functions-strap.php:373
 #, php-format
 msgid "You must specify a valid Theme slug - try: %s"
 msgstr "Occorre specificare uno slug valido - prova con: %s"
 
-#: inc/functions-strap.php:292
+#: inc/functions-strap.php:380
 #, php-format
 msgid "%s is not a valid Theme slug - try: %s instead"
 msgstr "%s non è uno slug valido - prova con: %s"
 
-#: inc/functions-strap.php:318 inc/functions-strap.php:319
-#: inc/functions-strap.php:336
+#: inc/functions-strap.php:406 inc/functions-strap.php:407
+#: inc/functions-strap.php:424
 msgid "Build theme"
 msgstr "Crea tema"
 
-#: inc/functions-strap.php:343
+#: inc/functions-strap.php:431
 msgid "_strap it!"
 msgstr "crea il tuo _strap!"
 

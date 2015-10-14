@@ -318,7 +318,7 @@ function _strap_build_field_slug() {
     $options = _strap_build_get_options();
     $selected = array_key_exists('slug', $options) ? $options['slug'] : '';
     ?><input class="all-options" type="text" name="_strap_build_options[slug]" id="_strap_build_options_slug" value="<?php echo esc_attr( $selected ); ?>" />
-    <span class="description"><?php _e( 'Something like "my-awesome-theme" or "mat" ', '_s' ); ?></span>
+    <span class="description"><?php _e( 'Something like "my_awesome_theme" or "mat" - only letters, numbers and underscores allowed', '_s' ); ?></span>
 <?php
 }
 
