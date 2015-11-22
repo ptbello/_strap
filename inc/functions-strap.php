@@ -485,7 +485,7 @@ function _strap_build_production($slug)
 	$src = get_stylesheet_directory();
 	$dst = $root . DIRECTORY_SEPARATOR . $slug;
 
-	// create ./assets structure and move bootsrap around
+	// create ./assets structure and move bootstrap around
 	$assets_path = $dst . DIRECTORY_SEPARATOR . 'assets';
 	mkdir($assets_path);
 	mkdir($assets_path . DIRECTORY_SEPARATOR . 'styles');
